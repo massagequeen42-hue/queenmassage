@@ -14,6 +14,18 @@ interface ServicePageProps {
 }
 
 const serviceDetails: Record<string, { description: string; benefits: string[] }> = {
+  'pijat-traditional-refleksi': {
+    description: 'Pijat Traditional & Refleksi adalah kombinasi sempurna antara pijat tradisional Indonesia dan terapi refleksi. Sesi dimulai dengan pijat seluruh tubuh menggunakan teknik tradisional untuk melancarkan peredaran darah dan melepas ketegangan otot, dilanjutkan dengan refleksi pada titik-titik saraf kaki yang terhubung dengan organ tubuh. Kombinasi ini memberikan manfaat ganda: relaksasi total sekaligus keseimbangan energi tubuh.',
+    benefits: ['Melancarkan peredaran darah', 'Menyeimbangkan energi tubuh', 'Mengurangi nyeri otot dan sendi', 'Meningkatkan fungsi organ melalui refleksi', 'Mengurangi stress dan kecemasan', 'Meningkatkan kualitas tidur'],
+  },
+  'pijat-kebugaran': {
+    description: 'Pijat Kebugaran adalah layanan premium yang dirancang untuk memulihkan kebugaran tubuh secara menyeluruh. Menggunakan teknik deep pressure dan stretching yang intensif, terapis kami bekerja pada seluruh kelompok otot untuk menghilangkan kelelahan, mengembalikan vitalitas, dan meningkatkan performa fisik. Sangat cocok untuk Anda yang aktif, sering berolahraga, atau membutuhkan pemulihan total dari rutinitas yang berat.',
+    benefits: ['Memulihkan kebugaran secara total', 'Menghilangkan kelelahan kronis', 'Meningkatkan vitalitas dan energi', 'Deep muscle recovery', 'Meningkatkan fleksibilitas tubuh', 'Detoksifikasi dan revitalisasi'],
+  },
+  'pijat-lulur': {
+    description: 'Pijat Lulur adalah perawatan lengkap yang menggabungkan pijat relaksasi dengan treatment lulur tradisional. Sesi 120 menit ini dimulai dengan pijat seluruh tubuh untuk merilekskan otot, dilanjutkan dengan aplikasi lulur alami yang mengangkat sel kulit mati, mencerahkan kulit, dan melembabkan. Hasilnya: tubuh rileks, kulit halus, cerah, dan bersinar. Pengalaman spa premium langsung di rumah Anda.',
+    benefits: ['Kulit halus dan cerah', 'Mengangkat sel kulit mati', 'Relaksasi tubuh menyeluruh', 'Melembabkan dan menutrisi kulit', 'Detoksifikasi kulit', 'Pengalaman spa premium di rumah'],
+  },
   'traditional-massage': {
     description: 'Pijat tradisional Indonesia adalah warisan budaya yang telah digunakan selama berabad-abad untuk menjaga kesehatan dan kebugaran tubuh. Teknik pemijatan ini menggunakan jari, telapak tangan, dan siku untuk menekan titik-titik tertentu pada tubuh, melancarkan peredaran darah, dan melepas ketegangan otot. Terapis QueenMassage yang berpengalaman akan menyesuaikan tekanan sesuai kebutuhan dan kenyamanan Anda.',
     benefits: ['Melancarkan peredaran darah', 'Mengurangi nyeri otot', 'Meningkatkan fleksibilitas', 'Mengurangi stress', 'Meningkatkan kualitas tidur', 'Membuang racun dalam tubuh'],
@@ -164,6 +176,13 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
             <div className="space-y-6">
               <Card className="sticky top-24">
                 <CardContent className="p-6 space-y-4">
+                  {service.recommended && (
+                    <div className="text-center">
+                      <span className="inline-flex items-center rounded-full bg-gold-500/10 border border-gold-500/30 px-3 py-1 text-xs font-semibold text-gold-500">
+                        ⭐ Layanan Rekomendasi
+                      </span>
+                    </div>
+                  )}
                   <div className="text-center">
                     <p className="text-sm text-muted-foreground">Mulai dari</p>
                     <p className="text-3xl font-bold text-primary">
@@ -174,6 +193,19 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
                       <span>{service.duration} menit</span>
                     </div>
                   </div>
+
+                  {/* Price options per duration */}
+                  {service.priceOptions && service.priceOptions.length > 1 && (
+                    <div className="space-y-2 pt-2 border-t">
+                      <p className="text-xs font-medium text-muted-foreground">Pilihan Durasi:</p>
+                      {service.priceOptions.map((opt: { duration: number; price: number }) => (
+                        <div key={opt.duration} className="flex items-center justify-between text-sm rounded-lg bg-muted/50 px-3 py-2">
+                          <span>{opt.duration} menit</span>
+                          <span className="font-semibold text-primary">{formatPrice(opt.price)}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
 
                   <div className="space-y-3">
                     <Button variant="gold" className="w-full" size="lg" asChild>

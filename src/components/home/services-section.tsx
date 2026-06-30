@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { ArrowRight, Flower2, Heart, Dumbbell, Layers, Footprints, Sparkles, Baby, Users, Building, Briefcase } from 'lucide-react'
+import { ArrowRight, Flower2, Heart, Dumbbell, Layers, Footprints, Sparkles, Baby, Users, Building, Briefcase, Star, Zap, Gem } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { SectionHeading } from '@/components/ui/section-heading'
 import { SERVICES } from '@/lib/constants'
@@ -19,6 +19,9 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Users,
   Building,
   Briefcase,
+  Star,
+  Zap,
+  Gem,
 }
 
 export function ServicesSection() {
@@ -44,8 +47,15 @@ export function ServicesSection() {
               >
                 <Link
                   href={`/layanan/${service.slug}`}
-                  className="group block h-full rounded-2xl border bg-card p-6 card-hover"
+                  className={`group block h-full rounded-2xl border p-6 card-hover ${
+                    service.recommended ? 'border-gold-500/50 bg-gradient-to-br from-card to-gold-500/5' : 'bg-card'
+                  }`}
                 >
+                  {service.recommended && (
+                    <span className="inline-flex items-center rounded-full bg-gold-500/10 border border-gold-500/30 px-2 py-0.5 text-xs font-semibold text-gold-500 mb-3">
+                      ⭐ Rekomendasi
+                    </span>
+                  )}
                   <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-primary/10 to-secondary/10 text-primary group-hover:from-primary group-hover:to-purple-700 group-hover:text-white transition-all duration-300">
                     <Icon className="h-7 w-7" />
                   </div>

@@ -25,6 +25,34 @@ export default function PricingPage() {
           subtitle="Harga transparan tanpa biaya tersembunyi. Sudah termasuk transport untuk area Bandung."
         />
 
+        {/* Recommended Services */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <h3 className="font-heading text-xl font-bold mb-4 flex items-center gap-2">
+            ⭐ Layanan Rekomendasi
+          </h3>
+          <div className="rounded-2xl border overflow-hidden">
+            {SERVICES.filter((s) => s.recommended).map((service, index) => (
+              <div key={service.slug} className={`p-5 ${index % 2 === 0 ? 'bg-gold-500/5' : ''}`}>
+                <div className="flex items-center justify-between mb-3">
+                  <Link href={`/layanan/${service.slug}`} className="font-semibold text-lg hover:text-primary transition-colors">
+                    {service.name}
+                  </Link>
+                  <Badge variant="gold">Rekomendasi</Badge>
+                </div>
+                <p className="text-sm text-muted-foreground mb-3">{service.shortDesc}</p>
+                <div className="flex flex-wrap gap-3">
+                  {service.priceOptions?.map((opt) => (
+                    <div key={opt.duration} className="rounded-lg border bg-card px-4 py-2 text-center">
+                      <p className="text-xs text-muted-foreground">{opt.duration} menit</p>
+                      <p className="font-bold text-primary">{formatPrice(opt.price)}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Price Table */}
         <div className="max-w-4xl mx-auto">
           <div className="rounded-2xl border overflow-hidden">

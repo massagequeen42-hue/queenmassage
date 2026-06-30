@@ -18,6 +18,46 @@ export const SITE_CONFIG = {
 
 export const SERVICES = [
   {
+    name: 'Pijat Traditional & Refleksi',
+    slug: 'pijat-traditional-refleksi',
+    shortDesc: 'Kombinasi pijat tradisional dan refleksi untuk relaksasi total dan keseimbangan tubuh.',
+    icon: 'Star',
+    price: 200000,
+    priceOptions: [
+      { duration: 60, price: 200000 },
+      { duration: 90, price: 250000 },
+      { duration: 120, price: 300000 },
+    ],
+    duration: 60,
+    recommended: true,
+  },
+  {
+    name: 'Pijat Kebugaran',
+    slug: 'pijat-kebugaran',
+    shortDesc: 'Pijat khusus untuk memulihkan kebugaran tubuh, menghilangkan lelah dan pegal secara menyeluruh.',
+    icon: 'Zap',
+    price: 400000,
+    priceOptions: [
+      { duration: 60, price: 400000 },
+      { duration: 90, price: 500000 },
+      { duration: 120, price: 600000 },
+    ],
+    duration: 60,
+    recommended: true,
+  },
+  {
+    name: 'Pijat Lulur',
+    slug: 'pijat-lulur',
+    shortDesc: 'Perawatan lengkap pijat dan lulur untuk kulit halus, cerah, dan tubuh rileks.',
+    icon: 'Gem',
+    price: 450000,
+    priceOptions: [
+      { duration: 120, price: 450000 },
+    ],
+    duration: 120,
+    recommended: true,
+  },
+  {
     name: 'Traditional Massage',
     slug: 'traditional-massage',
     shortDesc: 'Pijat tradisional Indonesia dengan teknik turun-temurun untuk relaksasi total.',
