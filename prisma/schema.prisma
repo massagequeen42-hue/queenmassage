@@ -1,0 +1,302 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+// ==========================================
+// Authentication
+// ==========================================
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@map("accounts")
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("sessions")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+  role          Role      @default(USER)
+  accounts      Account[]
+  sessions      Session[]
+
+  @@map("users")
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+  @@map("verification_tokens")
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+// ==========================================
+// Services
+// ==========================================
+
+model Service {
+  id          String    @id @default(cuid())
+  name        String
+  slug        String    @unique
+  description String    @db.Text
+  shortDesc   String
+  duration    Int       // in minutes
+  price       Int       // in IDR
+  priceMax    Int?      // max price range
+  image       String?
+  icon        String?
+  benefits    String[]
+  isActive    Boolean   @default(true)
+  sortOrder   Int       @default(0)
+  category    String    @default("massage")
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  bookings    Booking[]
+
+  @@map("services")
+}
+
+// ==========================================
+// Bookings
+// ==========================================
+
+model Booking {
+  id              String        @id @default(cuid())
+  customerName    String
+  phone           String
+  email           String?
+  address         String        @db.Text
+  latitude        Float?
+  longitude       Float?
+  serviceId       String
+  service         Service       @relation(fields: [serviceId], references: [id])
+  date            DateTime
+  time            String
+  duration        Int
+  therapistGender String?       // male, female, no_preference
+  notes           String?       @db.Text
+  totalPrice      Int
+  status          BookingStatus @default(PENDING)
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+
+  @@map("bookings")
+}
+
+enum BookingStatus {
+  PENDING
+  CONFIRMED
+  IN_PROGRESS
+  COMPLETED
+  CANCELLED
+}
+
+// ==========================================
+// Blog
+// ==========================================
+
+model BlogPost {
+  id            String      @id @default(cuid())
+  title         String
+  slug          String      @unique
+  excerpt       String      @db.Text
+  content       String      @db.Text
+  featuredImage String?
+  category      String
+  tags          String[]
+  author        String      @default("QueenMassage")
+  isPublished   Boolean     @default(false)
+  publishedAt   DateTime?
+  metaTitle     String?
+  metaDesc      String?
+  readTime      Int?
+  viewCount     Int         @default(0)
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+
+  @@map("blog_posts")
+}
+
+// ==========================================
+// Testimonials
+// ==========================================
+
+model Testimonial {
+  id        String   @id @default(cuid())
+  name      String
+  role      String?
+  content   String   @db.Text
+  rating    Int      @default(5)
+  image     String?
+  isActive  Boolean  @default(true)
+  sortOrder Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("testimonials")
+}
+
+// ==========================================
+// Gallery
+// ==========================================
+
+model GalleryItem {
+  id        String   @id @default(cuid())
+  title     String
+  image     String
+  category  String
+  isActive  Boolean  @default(true)
+  sortOrder Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("gallery_items")
+}
+
+// ==========================================
+// FAQ
+// ==========================================
+
+model FAQ {
+  id        String   @id @default(cuid())
+  question  String
+  answer    String   @db.Text
+  category  String   @default("general")
+  isActive  Boolean  @default(true)
+  sortOrder Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("faqs")
+}
+
+// ==========================================
+// Coverage Area
+// ==========================================
+
+model CoverageArea {
+  id          String   @id @default(cuid())
+  name        String
+  slug        String   @unique
+  description String   @db.Text
+  metaTitle   String?
+  metaDesc    String?
+  latitude    Float?
+  longitude   Float?
+  isActive    Boolean  @default(true)
+  sortOrder   Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("coverage_areas")
+}
+
+// ==========================================
+// Pricing
+// ==========================================
+
+model PricingPlan {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  duration    Int      // minutes
+  price       Int      // IDR
+  features    String[]
+  isPopular   Boolean  @default(false)
+  isActive    Boolean  @default(true)
+  sortOrder   Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("pricing_plans")
+}
+
+// ==========================================
+// Site Settings
+// ==========================================
+
+model SiteSetting {
+  id    String @id @default(cuid())
+  key   String @unique
+  value String @db.Text
+  type  String @default("text") // text, json, html, image
+
+  @@map("site_settings")
+}
+
+// ==========================================
+// Contact Submissions
+// ==========================================
+
+model ContactSubmission {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  subject   String
+  message   String   @db.Text
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@map("contact_submissions")
+}
+
+// ==========================================
+// Career Applications
+// ==========================================
+
+model CareerApplication {
+  id         String   @id @default(cuid())
+  name       String
+  email      String
+  phone      String
+  position   String
+  experience String?
+  message    String?  @db.Text
+  resume     String?
+  status     String   @default("pending")
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@map("career_applications")
+}
