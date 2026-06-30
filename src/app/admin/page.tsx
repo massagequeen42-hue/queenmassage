@@ -4,6 +4,9 @@ import { Calendar, Users, DollarSign, TrendingUp } from 'lucide-react'
 import { formatPrice } from '@/lib/utils'
 
 async function getDashboardStats() {
+  if (!process.env.DATABASE_URL || process.env.DATABASE_URL.includes('fake')) {
+    return { totalBookings: 0, pendingBookings: 0, totalRevenue: 0, totalCustomers: 0 }
+  }
   try {
     const [totalBookings, pendingBookings, totalRevenue, totalCustomers] = await Promise.all([
       prisma.booking.count(),

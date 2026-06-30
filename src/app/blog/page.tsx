@@ -17,6 +17,9 @@ export const metadata: Metadata = generateSEO({
 export const revalidate = 3600 // revalidate every hour
 
 async function getBlogPosts() {
+  if (!process.env.DATABASE_URL || process.env.DATABASE_URL.includes('fake')) {
+    return []
+  }
   try {
     const posts = await prisma.blogPost.findMany({
       where: { isPublished: true },

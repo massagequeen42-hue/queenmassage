@@ -44,17 +44,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Blog posts (dynamic from DB)
   let blogPages: MetadataRoute.Sitemap = []
   try {
-    const { prisma } = await import('@/lib/prisma')
-    const posts = await prisma.blogPost.findMany({
-      where: { isPublished: true },
-      select: { slug: true, updatedAt: true },
-    })
-    blogPages = posts.map((post) => ({
-      url: `${baseUrl}/blog/${post.slug}`,
-      lastModified: post.updatedAt,
-      changeFrequency: 'weekly' as const,
-      priority: 0.7,
-    }))
+    if (process.env.DATABASE_URL && !process.env.DATABASE_URL.includes('fake')) {
+      const { prisma } = await import('@/lib/prisma')
+      const posts = await prisma.blogPost.findMany({
+        where: { isPublished: true },
+        select: { slug: true, updatedAt: true },
+      })
+      blogPages = posts.map((post) => ({
+        url: `${baseUrl}/blog/${post.slug}`,
+        lastModified: post.updatedAt,
+        changeFrequency: 'weekly' as const,
+        priority: 0.7,
+      }))
+    }
   } catch {
     // DB not available during build
   }

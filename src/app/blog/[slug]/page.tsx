@@ -13,6 +13,9 @@ interface BlogPostPageProps {
 }
 
 async function getBlogPost(slug: string) {
+  if (!process.env.DATABASE_URL || process.env.DATABASE_URL.includes('fake')) {
+    return null
+  }
   try {
     const post = await prisma.blogPost.findUnique({
       where: { slug, isPublished: true },

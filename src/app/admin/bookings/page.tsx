@@ -4,6 +4,9 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { formatPrice, formatDate } from '@/lib/utils'
 
 async function getBookings() {
+  if (!process.env.DATABASE_URL || process.env.DATABASE_URL.includes('fake')) {
+    return []
+  }
   try {
     return await prisma.booking.findMany({
       include: { service: true },
