@@ -10,8 +10,9 @@ interface Session {
 }
 
 export async function getServerSession(): Promise<Session | null> {
-  // Simplified auth check - in production, use NextAuth properly
-  // This is a placeholder that checks for admin access
+  if (!process.env.DATABASE_URL || process.env.DATABASE_URL.includes('fake')) {
+    return null
+  }
   try {
     const adminEmail = process.env.ADMIN_EMAIL
     if (!adminEmail) return null
