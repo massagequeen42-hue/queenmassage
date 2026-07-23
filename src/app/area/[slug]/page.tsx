@@ -102,7 +102,7 @@ export default async function AreaDetailPage({ params }: AreaPageProps) {
                   <p>
                     Area layanan kami di {area.name} mencakup seluruh kelurahan dan perumahan di sekitarnya. 
                     Tidak ada biaya transport tambahan untuk area ini. Layanan tersedia setiap hari 
-                    dari pukul 08:00 hingga 22:00 WIB.
+                    dari pukul 08:00 hingga 22:00 WIB, bahkan tersedia 24 jam untuk panggilan massage.
                   </p>
                 </div>
               </section>
@@ -167,7 +167,7 @@ export default async function AreaDetailPage({ params }: AreaPageProps) {
 
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <Clock className="h-4 w-4" />
-                    <span>Setiap hari 08:00 - 22:00</span>
+                    <span>24 Jam Siap Melayani</span>
                   </div>
 
                   <div className="space-y-3 pt-2">

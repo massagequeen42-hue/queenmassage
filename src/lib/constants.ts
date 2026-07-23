@@ -8,7 +8,7 @@ export const SITE_CONFIG = {
   whatsapp: '6282129881618',
   email: 'info@queenmassage.id',
   address: 'Bandung, Jawa Barat, Indonesia',
-  openingHours: '08:00 - 22:00',
+  openingHours: '24 Jam',
   socialMedia: {
     instagram: 'https://instagram.com/queenmassage.id',
     facebook: 'https://facebook.com/queenmassage.id',

@@ -7,8 +7,8 @@ import { SectionHeading } from '@/components/ui/section-heading'
 const benefits = [
   {
     icon: Clock,
-    title: 'Tersedia 08:00 - 22:00',
-    description: 'Layanan pijat tersedia setiap hari, termasuk hari libur dan weekend.',
+    title: '24 Jam Siap Menerima Panggilan',
+    description: 'Layanan pijat tersedia 24 jam setiap hari, termasuk hari libur dan weekend.',
   },
   {
     icon: Shield,

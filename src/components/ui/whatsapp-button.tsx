@@ -8,8 +8,9 @@ import { getWhatsAppUrl } from '@/lib/utils'
 export function WhatsAppButton() {
   const [isOpen, setIsOpen] = useState(false)
 
-  const defaultMessage = process.env.NEXT_PUBLIC_WHATSAPP_MESSAGE || 
-    'Halo QueenMassage, saya ingin booking massage.'
+  const defaultMessage = 'Halo QueenMassage, saya ingin booking massage.'
+
+  const whatsappUrl = `https://wa.me/6282129881618?text=${encodeURIComponent(defaultMessage)}`
 
   return (
     <div className="fixed bottom-6 right-6 z-50">
@@ -33,7 +34,7 @@ export function WhatsAppButton() {
               </p>
             </div>
             <a
-              href={getWhatsAppUrl(defaultMessage)}
+              href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full rounded-lg bg-green-500 px-4 py-2.5 text-center text-sm font-medium text-white hover:bg-green-600 transition-colors"
