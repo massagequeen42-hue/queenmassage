@@ -68,7 +68,7 @@ export function HeroSection() {
           >
             <span className="block">Relaksasi Premium</span>
             <span className="block mt-2">
-              <span className="gradient-text">Di Rumah Anda</span>
+              <span className="gradient-text">Siap Datang ke Tempat Anda</span>
             </span>
           </motion.h1>
 
@@ -79,8 +79,8 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed"
           >
-            Nikmati layanan pijat profesional langsung di rumah, hotel, atau kantor Anda. 
-            Terapis bersertifikat dengan pengalaman lebih dari 5 tahun melayani seluruh area Bandung.
+            Nikmati layanan pijat profesional panggilan ke rumah, hotel, atau apartemen Anda. 
+            Terapis bersertifikat dengan pengalaman lebih dari 5 tahun melayani seluruh area Bandung dan sekitarnya.
           </motion.p>
 
           {/* CTA Buttons */}
