@@ -35,7 +35,7 @@ export function truncate(str: string, length: number): string {
 }
 
 export function getWhatsAppUrl(message: string): string {
-  const phone = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '6281234567890'
+  const phone = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '6282129881618'
   return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
 }
 
