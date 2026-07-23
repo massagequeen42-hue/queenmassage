@@ -10,7 +10,7 @@ export function WhatsAppButton() {
 
   const defaultMessage = 'Halo QueenMassage, saya ingin booking massage.'
 
-  const whatsappUrl = `https://wa.me/6282129881618?text=${encodeURIComponent(defaultMessage)}`
+  const whatsappUrl = `https://wa.me/628212988161?text=${encodeURIComponent(defaultMessage)}`
 
   return (
     <div className="fixed bottom-6 right-6 z-50">
