@@ -12,7 +12,7 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2">
               <Crown className="h-8 w-8 text-gold-500" />
               <span className="font-heading text-xl font-bold">
-                <span className="text-gold-500">Queen</span>Massage
+                <span className="text-gold-500">Aurel</span>Massage
               </span>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed">

@@ -41,7 +41,7 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-2 group">
           <Crown className="h-8 w-8 text-gold-500 group-hover:rotate-12 transition-transform duration-300" />
           <span className="font-heading text-xl font-bold">
-            <span className="text-gold-500">Queen</span>
+            <span className="text-gold-500">Aurel</span>
             <span className="text-foreground">Massage</span>
           </span>
         </Link>
