@@ -1,4 +1,4 @@
-﻿import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { prisma } from '@/lib/prisma'
 import { Calendar, Users, DollarSign, TrendingUp } from 'lucide-react'
 import { formatPrice } from '@/lib/utils'

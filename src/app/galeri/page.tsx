@@ -1,4 +1,4 @@
-﻿import { Metadata } from 'next'
+import { Metadata } from 'next'
 import { SectionHeading } from '@/components/ui/section-heading'
 import { generateSEO } from '@/lib/seo'
 

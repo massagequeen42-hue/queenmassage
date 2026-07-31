@@ -1,4 +1,4 @@
-﻿import { MetadataRoute } from 'next'
+import { MetadataRoute } from 'next'
 import { SERVICES, COVERAGE_AREAS } from '@/lib/constants'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

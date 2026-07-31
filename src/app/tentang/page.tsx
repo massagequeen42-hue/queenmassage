@@ -1,4 +1,4 @@
-﻿import { Metadata } from 'next'
+import { Metadata } from 'next'
 import { Award, Users, Heart, Shield, Clock, Star } from 'lucide-react'
 import { SectionHeading } from '@/components/ui/section-heading'
 import { generateSEO } from '@/lib/seo'

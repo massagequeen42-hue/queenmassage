@@ -1,4 +1,4 @@
-﻿import { Metadata } from 'next'
+import { Metadata } from 'next'
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook, MessageCircle } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
 import { SectionHeading } from '@/components/ui/section-heading'

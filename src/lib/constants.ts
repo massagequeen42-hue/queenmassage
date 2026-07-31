@@ -1,4 +1,4 @@
-﻿export const SITE_CONFIG = {
+export const SITE_CONFIG = {
   name: 'AurelMassage',
   domain: 'aurelmassage.id',
   url: 'https://aurelmassage.id',

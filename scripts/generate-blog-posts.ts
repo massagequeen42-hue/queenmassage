@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Blog Post Generator for SEO
  * Run: npx tsx scripts/generate-blog-posts.ts
  * 

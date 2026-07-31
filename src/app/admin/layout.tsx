@@ -1,4 +1,4 @@
-﻿import { Metadata } from 'next'
+import { Metadata } from 'next'
 import { redirect } from 'next/navigation'
 import { AdminSidebar } from '@/components/admin/sidebar'
 import { getServerSession } from '@/lib/auth'

@@ -1,4 +1,4 @@
-﻿import { Metadata } from 'next'
+import { Metadata } from 'next'
 import { FAQSection } from '@/components/home/faq-section'
 import { generateSEO, generateFAQSchema } from '@/lib/seo'
 import { FAQ_DATA } from '@/lib/constants'

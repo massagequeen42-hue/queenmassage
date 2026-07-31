@@ -1,4 +1,4 @@
-﻿import { Metadata } from 'next'
+import { Metadata } from 'next'
 import { BookingForm } from '@/components/booking/booking-form'
 import { generateSEO } from '@/lib/seo'
 

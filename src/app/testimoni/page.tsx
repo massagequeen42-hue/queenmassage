@@ -1,4 +1,4 @@
-﻿import { Metadata } from 'next'
+import { Metadata } from 'next'
 import { TestimonialsSection } from '@/components/home/testimonials-section'
 import { generateSEO } from '@/lib/seo'
 
