@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -8,7 +8,7 @@ import { getWhatsAppUrl } from '@/lib/utils'
 export function WhatsAppButton() {
   const [isOpen, setIsOpen] = useState(false)
 
-  const defaultMessage = 'Halo QueenMassage, saya ingin booking massage.'
+  const defaultMessage = 'Halo AurelMassage, saya ingin booking massage.'
 
   const whatsappUrl = `https://wa.me/628212988161?text=${encodeURIComponent(defaultMessage)}`
 
@@ -23,7 +23,7 @@ export function WhatsAppButton() {
             className="absolute bottom-16 right-0 mb-2 w-72 rounded-2xl glass-dark p-4 shadow-2xl"
           >
             <div className="mb-3">
-              <h4 className="font-semibold text-sm">QueenMassage</h4>
+              <h4 className="font-semibold text-sm">AurelMassage</h4>
               <p className="text-xs text-muted-foreground">
                 Online • Biasanya membalas dalam 5 menit
               </p>

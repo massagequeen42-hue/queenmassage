@@ -1,6 +1,6 @@
-# QueenMassage - Professional Home Massage Service Bandung
+﻿# AurelMassage - Professional Home Massage Service Bandung
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/queenmassage)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/aurelmassage)
 
 Premium home massage service website built with Next.js 15, React 19, TypeScript, and TailwindCSS.
 
@@ -25,8 +25,8 @@ Premium home massage service website built with Next.js 15, React 19, TypeScript
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/queenmassage.git
-cd queenmassage
+git clone https://github.com/yourusername/aurelmassage.git
+cd aurelmassage
 
 # Install dependencies
 npm install
@@ -55,7 +55,7 @@ Copy `.env.example` to `.env` and fill in:
 ## 🏗️ Project Structure
 
 ```
-queenmassage/
+aurelmassage/
 ├── prisma/              # Database schema & seed
 ├── public/              # Static assets
 ├── src/
@@ -135,4 +135,4 @@ npm run start
 
 ## 📄 License
 
-Private - QueenMassage © 2025
+Private - AurelMassage © 2025

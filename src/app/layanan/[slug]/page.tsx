@@ -27,7 +27,7 @@ const serviceDetails: Record<string, { description: string; benefits: string[] }
     benefits: ['Kulit halus dan cerah', 'Mengangkat sel kulit mati', 'Relaksasi tubuh menyeluruh', 'Melembabkan dan menutrisi kulit', 'Detoksifikasi kulit', 'Pengalaman spa premium di rumah'],
   },
   'traditional-massage': {
-    description: 'Pijat tradisional Indonesia adalah warisan budaya yang telah digunakan selama berabad-abad untuk menjaga kesehatan dan kebugaran tubuh. Teknik pemijatan ini menggunakan jari, telapak tangan, dan siku untuk menekan titik-titik tertentu pada tubuh, melancarkan peredaran darah, dan melepas ketegangan otot. Terapis QueenMassage yang berpengalaman akan menyesuaikan tekanan sesuai kebutuhan dan kenyamanan Anda.',
+    description: 'Pijat tradisional Indonesia adalah warisan budaya yang telah digunakan selama berabad-abad untuk menjaga kesehatan dan kebugaran tubuh. Teknik pemijatan ini menggunakan jari, telapak tangan, dan siku untuk menekan titik-titik tertentu pada tubuh, melancarkan peredaran darah, dan melepas ketegangan otot. Terapis AurelMassage yang berpengalaman akan menyesuaikan tekanan sesuai kebutuhan dan kenyamanan Anda.',
     benefits: ['Melancarkan peredaran darah', 'Mengurangi nyeri otot', 'Meningkatkan fleksibilitas', 'Mengurangi stress', 'Meningkatkan kualitas tidur', 'Membuang racun dalam tubuh'],
   },
   'relaxation-massage': {
@@ -77,7 +77,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
     title: `${service.name} - Pijat Panggilan Bandung`,
     description: `Layanan ${service.name} profesional di Bandung. ${service.shortDesc} Mulai ${formatPrice(service.price)}. Booking sekarang!`,
     keywords: [`${service.name.toLowerCase()} bandung`, `pijat ${service.name.toLowerCase()}`, `${service.slug} panggilan`],
-    url: `https://queenmassage.id/layanan/${slug}`,
+    url: `https://aurelmassage.id/layanan/${slug}`,
   })
 }
 
@@ -103,9 +103,9 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
   })
 
   const breadcrumb = generateBreadcrumbSchema([
-    { name: 'Home', url: 'https://queenmassage.id' },
-    { name: 'Layanan', url: 'https://queenmassage.id/layanan' },
-    { name: service.name, url: `https://queenmassage.id/layanan/${slug}` },
+    { name: 'Home', url: 'https://aurelmassage.id' },
+    { name: 'Layanan', url: 'https://aurelmassage.id/layanan' },
+    { name: service.name, url: `https://aurelmassage.id/layanan/${slug}` },
   ])
 
   return (

@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     title: post.metaTitle || post.title,
     description: post.metaDesc || post.excerpt,
     keywords: post.tags,
-    url: `https://queenmassage.id/blog/${slug}`,
+    url: `https://aurelmassage.id/blog/${slug}`,
     type: 'article',
     publishedTime: post.publishedAt?.toISOString(),
     image: post.featuredImage || undefined,
@@ -56,16 +56,16 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const articleSchema = generateArticleSchema({
     title: post.title,
     description: post.excerpt,
-    url: `https://queenmassage.id/blog/${slug}`,
+    url: `https://aurelmassage.id/blog/${slug}`,
     image: post.featuredImage || undefined,
     publishedTime: post.publishedAt?.toISOString() || post.createdAt.toISOString(),
     author: post.author,
   })
 
   const breadcrumb = generateBreadcrumbSchema([
-    { name: 'Home', url: 'https://queenmassage.id' },
-    { name: 'Blog', url: 'https://queenmassage.id/blog' },
-    { name: post.title, url: `https://queenmassage.id/blog/${slug}` },
+    { name: 'Home', url: 'https://aurelmassage.id' },
+    { name: 'Blog', url: 'https://aurelmassage.id/blog' },
+    { name: post.title, url: `https://aurelmassage.id/blog/${slug}` },
   ])
 
   return (

@@ -1,4 +1,4 @@
-# Installation Guide
+﻿# Installation Guide
 
 ## Prerequisites
 
@@ -10,8 +10,8 @@
 ## Step 1: Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/queenmassage.git
-cd queenmassage
+git clone https://github.com/yourusername/aurelmassage.git
+cd aurelmassage
 ```
 
 ## Step 2: Install Dependencies

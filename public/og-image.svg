@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
   <defs>
     <linearGradient id="ogbg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#1a0533"/>
@@ -15,9 +15,9 @@
   <path d="M 520 250 L 535 180 L 560 220 L 600 160 L 640 220 L 665 180 L 680 250 Z" fill="url(#ogcrown)" stroke="#fbbf24" stroke-width="3"/>
   <rect x="520" y="250" width="160" height="20" rx="4" fill="url(#ogcrown)"/>
   <!-- Text -->
-  <text x="600" y="340" font-family="serif" font-size="60" font-weight="bold" fill="#fbbf24" text-anchor="middle">QueenMassage</text>
+  <text x="600" y="340" font-family="serif" font-size="60" font-weight="bold" fill="#fbbf24" text-anchor="middle">AurelMassage</text>
   <text x="600" y="400" font-family="sans-serif" font-size="28" fill="#e9d5ff" text-anchor="middle">Pijat Panggilan Profesional Bandung</text>
   <text x="600" y="450" font-family="sans-serif" font-size="20" fill="#a78bfa" text-anchor="middle">24 Jam • Terapis Bersertifikat • Seluruh Bandung</text>
   <!-- URL -->
-  <text x="600" y="560" font-family="sans-serif" font-size="22" fill="#6b21a8" text-anchor="middle">queenmassage.id</text>
+  <text x="600" y="560" font-family="sans-serif" font-size="22" fill="#6b21a8" text-anchor="middle">aurelmassage.id</text>
 </svg>

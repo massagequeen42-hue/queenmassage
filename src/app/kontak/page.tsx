@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+﻿import { Metadata } from 'next'
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook, MessageCircle } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
 import { SectionHeading } from '@/components/ui/section-heading'
@@ -8,9 +8,9 @@ import { SITE_CONFIG } from '@/lib/constants'
 
 export const metadata: Metadata = generateSEO({
   title: 'Kontak Kami',
-  description: 'Hubungi QueenMassage untuk booking pijat panggilan atau pertanyaan. WhatsApp, telepon, email, atau kunjungi kami. Respon cepat dalam 5 menit.',
+  description: 'Hubungi AurelMassage untuk booking pijat panggilan atau pertanyaan. WhatsApp, telepon, email, atau kunjungi kami. Respon cepat dalam 5 menit.',
   keywords: ['kontak queen massage', 'hubungi pijat bandung', 'whatsapp massage bandung'],
-  url: 'https://queenmassage.id/kontak',
+  url: 'https://aurelmassage.id/kontak',
 })
 
 export default function ContactPage() {

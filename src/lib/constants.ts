@@ -1,18 +1,18 @@
-export const SITE_CONFIG = {
-  name: 'QueenMassage',
-  domain: 'queenmassage.id',
-  url: 'https://queenmassage.id',
-  title: 'QueenMassage - Pijat Panggilan Profesional Bandung #1',
+﻿export const SITE_CONFIG = {
+  name: 'AurelMassage',
+  domain: 'aurelmassage.id',
+  url: 'https://aurelmassage.id',
+  title: 'AurelMassage - Pijat Panggilan Profesional Bandung #1',
   description: 'Layanan pijat panggilan profesional terbaik di Bandung. Tersedia Traditional Massage, Sport Massage, Reflexology, Aromatherapy, Prenatal Massage, dan lainnya. Terapis bersertifikat, harga terjangkau.',
   phone: '+628212988161',
   whatsapp: '628212988161',
-  email: 'info@queenmassage.id',
+  email: 'info@aurelmassage.id',
   address: 'Bandung, Jawa Barat, Indonesia',
   openingHours: '24 Jam',
   socialMedia: {
-    instagram: 'https://instagram.com/queenmassage.id',
-    facebook: 'https://facebook.com/queenmassage.id',
-    tiktok: 'https://tiktok.com/@queenmassage.id',
+    instagram: 'https://instagram.com/aurelmassage.id',
+    facebook: 'https://facebook.com/aurelmassage.id',
+    tiktok: 'https://tiktok.com/@aurelmassage.id',
   },
 }
 
@@ -174,8 +174,8 @@ export const TIME_SLOTS = [
 
 export const FAQ_DATA = [
   {
-    question: 'Apa itu pijat panggilan QueenMassage?',
-    answer: 'QueenMassage adalah layanan pijat profesional yang datang langsung ke lokasi Anda, baik di rumah, hotel, atau kantor di area Bandung dan sekitarnya. Terapis kami bersertifikat dan berpengalaman.',
+    question: 'Apa itu pijat panggilan AurelMassage?',
+    answer: 'AurelMassage adalah layanan pijat profesional yang datang langsung ke lokasi Anda, baik di rumah, hotel, atau kantor di area Bandung dan sekitarnya. Terapis kami bersertifikat dan berpengalaman.',
   },
   {
     question: 'Bagaimana cara booking pijat?',
@@ -191,7 +191,7 @@ export const FAQ_DATA = [
   },
   {
     question: 'Apakah terapis bersertifikat?',
-    answer: 'Ya, seluruh terapis QueenMassage telah melalui pelatihan profesional dan memiliki sertifikasi resmi. Kami juga melakukan background check untuk keamanan pelanggan.',
+    answer: 'Ya, seluruh terapis AurelMassage telah melalui pelatihan profesional dan memiliki sertifikasi resmi. Kami juga melakukan background check untuk keamanan pelanggan.',
   },
   {
     question: 'Bisa memilih terapis pria atau wanita?',

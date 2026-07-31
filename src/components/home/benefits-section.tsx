@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { motion } from 'framer-motion'
 import { Clock, Shield, Award, Heart, Truck, CreditCard } from 'lucide-react'
@@ -42,7 +42,7 @@ export function BenefitsSection() {
     <section className="py-20 lg:py-28">
       <div className="container mx-auto px-4 lg:px-8">
         <SectionHeading
-          badge="Kenapa QueenMassage?"
+          badge="Kenapa AurelMassage?"
           title="Layanan Pijat Terbaik di Bandung"
           subtitle="Kami berkomitmen memberikan pengalaman pijat premium dengan standar tertinggi untuk kenyamanan Anda."
         />

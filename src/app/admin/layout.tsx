@@ -1,10 +1,10 @@
-import { Metadata } from 'next'
+﻿import { Metadata } from 'next'
 import { redirect } from 'next/navigation'
 import { AdminSidebar } from '@/components/admin/sidebar'
 import { getServerSession } from '@/lib/auth'
 
 export const metadata: Metadata = {
-  title: 'Admin Dashboard | QueenMassage',
+  title: 'Admin Dashboard | AurelMassage',
   robots: { index: false, follow: false },
 }
 

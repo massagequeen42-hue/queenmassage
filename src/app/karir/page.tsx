@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+﻿import { Metadata } from 'next'
 import { Briefcase, Heart, Clock, DollarSign } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
 import { SectionHeading } from '@/components/ui/section-heading'
@@ -7,9 +7,9 @@ import { generateSEO } from '@/lib/seo'
 
 export const metadata: Metadata = generateSEO({
   title: 'Karir - Lowongan Terapis Massage',
-  description: 'Bergabung dengan QueenMassage sebagai terapis pijat profesional di Bandung. Gaji menarik, jadwal fleksibel, pelatihan gratis.',
+  description: 'Bergabung dengan AurelMassage sebagai terapis pijat profesional di Bandung. Gaji menarik, jadwal fleksibel, pelatihan gratis.',
   keywords: ['lowongan terapis bandung', 'karir massage', 'kerja pijat bandung'],
-  url: 'https://queenmassage.id/karir',
+  url: 'https://aurelmassage.id/karir',
 })
 
 const benefits = [

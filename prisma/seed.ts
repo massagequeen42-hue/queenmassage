@@ -1,4 +1,4 @@
-import { PrismaClient } from '@prisma/client'
+﻿import { PrismaClient } from '@prisma/client'
 
 const prisma = new PrismaClient()
 
@@ -7,11 +7,11 @@ async function main() {
 
   // Create admin user
   await prisma.user.upsert({
-    where: { email: 'admin@queenmassage.id' },
+    where: { email: 'admin@aurelmassage.id' },
     update: {},
     create: {
-      email: 'admin@queenmassage.id',
-      name: 'Admin QueenMassage',
+      email: 'admin@aurelmassage.id',
+      name: 'Admin AurelMassage',
       role: 'ADMIN',
     },
   })
@@ -172,7 +172,7 @@ async function main() {
 
   // Seed FAQs
   const faqs = [
-    { question: 'Apa itu pijat panggilan QueenMassage?', answer: 'QueenMassage adalah layanan pijat profesional yang datang langsung ke lokasi Anda, baik di rumah, hotel, atau kantor di area Bandung dan sekitarnya.', category: 'general', sortOrder: 1 },
+    { question: 'Apa itu pijat panggilan AurelMassage?', answer: 'AurelMassage adalah layanan pijat profesional yang datang langsung ke lokasi Anda, baik di rumah, hotel, atau kantor di area Bandung dan sekitarnya.', category: 'general', sortOrder: 1 },
     { question: 'Bagaimana cara booking pijat?', answer: 'Anda bisa booking melalui website kami, menghubungi WhatsApp, atau mengisi form booking online. Pilih layanan, tanggal, waktu, dan lokasi.', category: 'booking', sortOrder: 2 },
     { question: 'Berapa harga pijat panggilan?', answer: 'Harga mulai dari Rp 125.000 untuk Reflexology hingga Rp 350.000 untuk Couple Massage. Sudah termasuk transport.', category: 'pricing', sortOrder: 3 },
     { question: 'Area mana saja yang dilayani?', answer: 'Seluruh Bandung Raya termasuk Bandung Kota, Cimahi, Lembang, Soreang, Kopo, Buah Batu, Antapani, Dago, Setiabudi, dan Pasteur.', category: 'area', sortOrder: 4 },
@@ -186,7 +186,7 @@ async function main() {
   // Seed Testimonials
   const testimonials = [
     { name: 'Sarah Wijaya', role: 'Karyawan Swasta', content: 'Pijat tradisionalnya luar biasa! Setelah seharian kerja, badan langsung terasa ringan.', rating: 5, sortOrder: 1 },
-    { name: 'Budi Santoso', role: 'Atlet', content: 'Sport massage di QueenMassage sangat membantu recovery setelah latihan berat.', rating: 5, sortOrder: 2 },
+    { name: 'Budi Santoso', role: 'Atlet', content: 'Sport massage di AurelMassage sangat membantu recovery setelah latihan berat.', rating: 5, sortOrder: 2 },
     { name: 'Rina Agustina', role: 'Ibu Hamil', content: 'Prenatal massage-nya sangat nyaman dan aman. Rasa pegal di punggung langsung hilang.', rating: 5, sortOrder: 3 },
   ]
 

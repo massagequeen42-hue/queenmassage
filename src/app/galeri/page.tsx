@@ -1,11 +1,11 @@
-import { Metadata } from 'next'
+﻿import { Metadata } from 'next'
 import { SectionHeading } from '@/components/ui/section-heading'
 import { generateSEO } from '@/lib/seo'
 
 export const metadata: Metadata = generateSEO({
   title: 'Galeri',
-  description: 'Galeri foto layanan pijat QueenMassage Bandung. Lihat suasana spa, terapis profesional, dan fasilitas kami.',
-  url: 'https://queenmassage.id/galeri',
+  description: 'Galeri foto layanan pijat AurelMassage Bandung. Lihat suasana spa, terapis profesional, dan fasilitas kami.',
+  url: 'https://aurelmassage.id/galeri',
 })
 
 const galleryItems = [
@@ -26,7 +26,7 @@ export default function GalleryPage() {
       <div className="container mx-auto px-4 lg:px-8">
         <SectionHeading
           badge="Galeri"
-          title="Galeri QueenMassage"
+          title="Galeri AurelMassage"
           subtitle="Intip suasana dan layanan profesional kami."
         />
 

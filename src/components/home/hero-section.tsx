@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useRef, useEffect } from 'react'
 import Link from 'next/link'
@@ -98,7 +98,7 @@ export function HeroSection() {
             </Button>
             <Button variant="glass" size="xl" asChild>
               <a
-                href={getWhatsAppUrl('Halo QueenMassage, saya ingin konsultasi layanan pijat.')}
+                href={getWhatsAppUrl('Halo AurelMassage, saya ingin konsultasi layanan pijat.')}
                 target="_blank"
                 rel="noopener noreferrer"
               >

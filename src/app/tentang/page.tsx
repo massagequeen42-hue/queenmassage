@@ -1,12 +1,12 @@
-import { Metadata } from 'next'
+﻿import { Metadata } from 'next'
 import { Award, Users, Heart, Shield, Clock, Star } from 'lucide-react'
 import { SectionHeading } from '@/components/ui/section-heading'
 import { generateSEO } from '@/lib/seo'
 
 export const metadata: Metadata = generateSEO({
-  title: 'Tentang QueenMassage',
-  description: 'QueenMassage adalah layanan pijat panggilan profesional terbaik di Bandung sejak 2020. Terapis bersertifikat, pengalaman premium, kepuasan terjamin.',
-  url: 'https://queenmassage.id/tentang',
+  title: 'Tentang AurelMassage',
+  description: 'AurelMassage adalah layanan pijat panggilan profesional terbaik di Bandung sejak 2020. Terapis bersertifikat, pengalaman premium, kepuasan terjamin.',
+  url: 'https://aurelmassage.id/tentang',
 })
 
 const stats = [
@@ -32,7 +32,7 @@ export default function AboutPage() {
         {/* Hero */}
         <SectionHeading
           badge="Tentang Kami"
-          title="Cerita QueenMassage"
+          title="Cerita AurelMassage"
           subtitle="Layanan pijat panggilan profesional terpercaya di Bandung sejak 2020"
         />
 
@@ -40,7 +40,7 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto mb-16">
           <div className="prose prose-lg dark:prose-invert mx-auto">
             <p>
-              <strong>QueenMassage</strong> lahir dari visi sederhana: memberikan layanan pijat berkualitas spa 
+              <strong>AurelMassage</strong> lahir dari visi sederhana: memberikan layanan pijat berkualitas spa 
               langsung di kenyamanan rumah Anda. Kami percaya bahwa setiap orang berhak mendapatkan relaksasi 
               premium tanpa harus repot keluar rumah.
             </p>
@@ -50,7 +50,7 @@ export default function AboutPage() {
               seluruh area Bandung Raya.
             </p>
             <p>
-              Setiap terapis QueenMassage telah melalui proses seleksi yang ketat, pelatihan intensif, 
+              Setiap terapis AurelMassage telah melalui proses seleksi yang ketat, pelatihan intensif, 
               dan sertifikasi resmi. Kami juga melakukan background check menyeluruh untuk memastikan 
               keamanan dan kenyamanan pelanggan kami.
             </p>

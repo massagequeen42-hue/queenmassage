@@ -1,10 +1,10 @@
-import { Metadata } from 'next'
+﻿import { Metadata } from 'next'
 import { generateSEO } from '@/lib/seo'
 
 export const metadata: Metadata = generateSEO({
   title: 'Privacy Policy',
-  description: 'Kebijakan privasi QueenMassage. Pelajari bagaimana kami melindungi data dan informasi pribadi Anda.',
-  url: 'https://queenmassage.id/privacy-policy',
+  description: 'Kebijakan privasi AurelMassage. Pelajari bagaimana kami melindungi data dan informasi pribadi Anda.',
+  url: 'https://aurelmassage.id/privacy-policy',
   noIndex: true,
 })
 
@@ -67,7 +67,7 @@ export default function PrivacyPolicyPage() {
           <h2>7. Hubungi Kami</h2>
           <p>
             Untuk pertanyaan tentang kebijakan privasi ini, hubungi kami di{' '}
-            <a href="mailto:info@queenmassage.id">info@queenmassage.id</a>
+            <a href="mailto:info@aurelmassage.id">info@aurelmassage.id</a>
           </p>
         </div>
       </div>

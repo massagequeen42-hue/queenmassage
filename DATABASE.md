@@ -1,8 +1,8 @@
-# Database Guide
+﻿# Database Guide
 
 ## Overview
 
-QueenMassage uses **Neon PostgreSQL** with **Prisma ORM**.
+AurelMassage uses **Neon PostgreSQL** with **Prisma ORM**.
 
 ## Schema
 
@@ -40,8 +40,8 @@ https://console.neon.tech
 ### 2. Configure Environment
 
 ```env
-DATABASE_URL="postgresql://user:pass@ep-xxx.aws.neon.tech/queenmassage?sslmode=require"
-DIRECT_URL="postgresql://user:pass@ep-xxx.aws.neon.tech/queenmassage?sslmode=require"
+DATABASE_URL="postgresql://user:pass@ep-xxx.aws.neon.tech/aurelmassage?sslmode=require"
+DIRECT_URL="postgresql://user:pass@ep-xxx.aws.neon.tech/aurelmassage?sslmode=require"
 ```
 
 ### 3. Generate Client

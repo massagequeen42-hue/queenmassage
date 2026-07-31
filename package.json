@@ -1,8 +1,8 @@
-{
-  "name": "queenmassage",
+﻿{
+  "name": "aurelmassage",
   "version": "1.0.0",
   "private": true,
-  "description": "QueenMassage - Professional Home Massage Service Bandung",
+  "description": "AurelMassage - Professional Home Massage Service Bandung",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

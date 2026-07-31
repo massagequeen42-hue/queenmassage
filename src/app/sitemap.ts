@@ -1,8 +1,8 @@
-import { MetadataRoute } from 'next'
+﻿import { MetadataRoute } from 'next'
 import { SERVICES, COVERAGE_AREAS } from '@/lib/constants'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://queenmassage.id'
+  const baseUrl = 'https://aurelmassage.id'
 
   // Static pages
   const staticPages = [

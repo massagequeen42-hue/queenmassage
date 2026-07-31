@@ -1,10 +1,10 @@
-# Deployment Guide
+﻿# Deployment Guide
 
 ## Vercel Deployment (Recommended)
 
 ### One-Click Deploy
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/queenmassage)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/aurelmassage)
 
 ### Manual Setup
 
@@ -13,7 +13,7 @@
 git init
 git add .
 git commit -m "Initial commit"
-git remote add origin https://github.com/yourusername/queenmassage.git
+git remote add origin https://github.com/yourusername/aurelmassage.git
 git push -u origin main
 ```
 
@@ -38,7 +38,7 @@ git push -u origin main
 ### Domain Setup
 
 1. Go to Project Settings > Domains
-2. Add `queenmassage.id`
+2. Add `aurelmassage.id`
 3. Configure DNS:
    - A Record: `76.76.21.21`
    - CNAME: `cname.vercel-dns.com`

@@ -1,10 +1,10 @@
-import { Metadata } from 'next'
+﻿import { Metadata } from 'next'
 import { generateSEO } from '@/lib/seo'
 
 export const metadata: Metadata = generateSEO({
   title: 'Terms of Service',
-  description: 'Syarat dan ketentuan layanan QueenMassage. Baca sebelum menggunakan layanan pijat panggilan kami.',
-  url: 'https://queenmassage.id/terms',
+  description: 'Syarat dan ketentuan layanan AurelMassage. Baca sebelum menggunakan layanan pijat panggilan kami.',
+  url: 'https://aurelmassage.id/terms',
   noIndex: true,
 })
 
@@ -18,13 +18,13 @@ export default function TermsPage() {
 
           <h2>1. Ketentuan Umum</h2>
           <p>
-            Dengan menggunakan layanan QueenMassage, Anda menyetujui semua syarat dan 
+            Dengan menggunakan layanan AurelMassage, Anda menyetujui semua syarat dan 
             ketentuan yang tercantum di sini.
           </p>
 
           <h2>2. Layanan</h2>
           <p>
-            QueenMassage menyediakan layanan pijat panggilan profesional di area Bandung 
+            AurelMassage menyediakan layanan pijat panggilan profesional di area Bandung 
             dan sekitarnya. Layanan diberikan oleh terapis independen yang bekerja sama dengan kami.
           </p>
 
@@ -45,7 +45,7 @@ export default function TermsPage() {
           <h2>5. Tanggung Jawab</h2>
           <p>
             Pelanggan wajib memberikan informasi yang benar mengenai kondisi kesehatan. 
-            QueenMassage tidak bertanggung jawab atas komplikasi akibat informasi yang tidak akurat.
+            AurelMassage tidak bertanggung jawab atas komplikasi akibat informasi yang tidak akurat.
           </p>
 
           <h2>6. Garansi</h2>

@@ -1,4 +1,4 @@
-import { type ClassValue, clsx } from 'clsx'
+﻿import { type ClassValue, clsx } from 'clsx'
 import { twMerge } from 'tailwind-merge'
 
 export function cn(...inputs: ClassValue[]) {
@@ -46,9 +46,9 @@ export function calculateReadTime(content: string): number {
 }
 
 export function generateMetaTitle(title: string): string {
-  return `${title} | QueenMassage - Pijat Panggilan Bandung`
+  return `${title} | AurelMassage - Pijat Panggilan Bandung`
 }
 
 export function getBaseUrl(): string {
-  return process.env.NEXT_PUBLIC_APP_URL || 'https://queenmassage.id'
+  return process.env.NEXT_PUBLIC_APP_URL || 'https://aurelmassage.id'
 }

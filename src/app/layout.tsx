@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Inter, Playfair_Display } from 'next/font/google'
 import { ThemeProvider } from '@/components/providers/theme-provider'
 import { SmoothScrollProvider } from '@/components/providers/smooth-scroll-provider'
@@ -24,7 +24,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   ...generateSEO(),
-  metadataBase: new URL('https://queenmassage.id'),
+  metadataBase: new URL('https://aurelmassage.id'),
   verification: {
     google: process.env.NEXT_PUBLIC_GSC_VERIFICATION,
   },

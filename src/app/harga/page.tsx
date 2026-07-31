@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+﻿import { Metadata } from 'next'
 import Link from 'next/link'
 import { Check, Clock, Phone } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -10,9 +10,9 @@ import { formatPrice, getWhatsAppUrl } from '@/lib/utils'
 
 export const metadata: Metadata = generateSEO({
   title: 'Harga Pijat Panggilan Bandung',
-  description: 'Daftar harga layanan pijat panggilan QueenMassage Bandung. Mulai dari Rp125.000. Harga transparan, tanpa biaya tersembunyi. Gratis transport.',
+  description: 'Daftar harga layanan pijat panggilan AurelMassage Bandung. Mulai dari Rp125.000. Harga transparan, tanpa biaya tersembunyi. Gratis transport.',
   keywords: ['harga pijat panggilan bandung', 'tarif massage bandung', 'biaya pijat rumah'],
-  url: 'https://queenmassage.id/harga',
+  url: 'https://aurelmassage.id/harga',
 })
 
 export default function PricingPage() {
@@ -118,7 +118,7 @@ export default function PricingPage() {
           <p className="text-muted-foreground mb-4">Ada pertanyaan tentang harga?</p>
           <Button variant="gold" size="lg" asChild>
             <a
-              href={getWhatsAppUrl('Halo QueenMassage, saya ingin tanya tentang harga.')}
+              href={getWhatsAppUrl('Halo AurelMassage, saya ingin tanya tentang harga.')}
               target="_blank"
               rel="noopener noreferrer"
             >

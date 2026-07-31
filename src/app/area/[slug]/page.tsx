@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: AreaPageProps): Promise<Metad
       `spa panggilan ${area.name.toLowerCase()}`,
       `pijat rumah ${area.name.toLowerCase()}`,
     ],
-    url: `https://queenmassage.id/area/${slug}`,
+    url: `https://aurelmassage.id/area/${slug}`,
   })
 }
 
@@ -41,9 +41,9 @@ export default async function AreaDetailPage({ params }: AreaPageProps) {
   if (!area) notFound()
 
   const breadcrumb = generateBreadcrumbSchema([
-    { name: 'Home', url: 'https://queenmassage.id' },
-    { name: 'Area Layanan', url: 'https://queenmassage.id/area' },
-    { name: area.name, url: `https://queenmassage.id/area/${slug}` },
+    { name: 'Home', url: 'https://aurelmassage.id' },
+    { name: 'Area Layanan', url: 'https://aurelmassage.id/area' },
+    { name: area.name, url: `https://aurelmassage.id/area/${slug}` },
   ])
 
   return (
@@ -89,7 +89,7 @@ export default async function AreaDetailPage({ params }: AreaPageProps) {
                 </h2>
                 <div className="prose prose-sm dark:prose-invert max-w-none">
                   <p>
-                    QueenMassage menyediakan layanan pijat panggilan profesional di area {area.name}, Bandung. 
+                    AurelMassage menyediakan layanan pijat panggilan profesional di area {area.name}, Bandung. 
                     Tim terapis kami yang bersertifikat dan berpengalaman siap datang langsung ke lokasi Anda 
                     untuk memberikan pengalaman relaksasi premium tanpa perlu keluar rumah.
                   </p>
@@ -132,7 +132,7 @@ export default async function AreaDetailPage({ params }: AreaPageProps) {
               {/* Why Choose Us */}
               <section>
                 <h2 className="font-heading text-2xl font-bold mb-4">
-                  Kenapa Memilih QueenMassage di {area.name}?
+                  Kenapa Memilih AurelMassage di {area.name}?
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {[

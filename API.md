@@ -1,9 +1,9 @@
-# API Documentation
+﻿# API Documentation
 
 ## Base URL
 
 ```
-https://queenmassage.id/api
+https://aurelmassage.id/api
 ```
 
 ## Endpoints

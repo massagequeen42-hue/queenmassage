@@ -1,4 +1,4 @@
-generator client {
+﻿generator client {
   provider = "prisma-client-js"
 }
 
@@ -143,7 +143,7 @@ model BlogPost {
   featuredImage String?
   category      String
   tags          String[]
-  author        String      @default("QueenMassage")
+  author        String      @default("AurelMassage")
   isPublished   Boolean     @default(false)
   publishedAt   DateTime?
   metaTitle     String?

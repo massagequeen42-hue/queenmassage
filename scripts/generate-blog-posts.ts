@@ -1,8 +1,8 @@
-/**
+﻿/**
  * Blog Post Generator for SEO
  * Run: npx tsx scripts/generate-blog-posts.ts
  * 
- * Generates 150 SEO-optimized blog posts for QueenMassage
+ * Generates 150 SEO-optimized blog posts for AurelMassage
  */
 
 import { PrismaClient } from '@prisma/client'
@@ -20,7 +20,7 @@ interface BlogTemplate {
 const blogTemplates: BlogTemplate[] = [
   // Massage in Bandung
   { title: 'Pijat Panggilan Terbaik di Bandung 2025 - Panduan Lengkap', slug: 'pijat-panggilan-terbaik-bandung', category: 'Guide', tags: ['pijat bandung', 'massage bandung', 'pijat panggilan'], excerpt: 'Panduan lengkap memilih layanan pijat panggilan profesional di Bandung. Tips memilih terapis, harga, dan rekomendasi terbaik.' },
-  { title: 'Massage Near Me Bandung - Layanan Pijat Terdekat', slug: 'massage-near-me-bandung', category: 'Local', tags: ['massage near me', 'pijat terdekat', 'bandung'], excerpt: 'Cari layanan massage terdekat di Bandung? QueenMassage menyediakan pijat panggilan profesional ke lokasi Anda.' },
+  { title: 'Massage Near Me Bandung - Layanan Pijat Terdekat', slug: 'massage-near-me-bandung', category: 'Local', tags: ['massage near me', 'pijat terdekat', 'bandung'], excerpt: 'Cari layanan massage terdekat di Bandung? AurelMassage menyediakan pijat panggilan profesional ke lokasi Anda.' },
   { title: 'Home Massage Bandung - Pijat Premium di Rumah', slug: 'home-massage-bandung', category: 'Service', tags: ['home massage', 'pijat rumah', 'bandung'], excerpt: 'Nikmati layanan home massage premium di Bandung. Terapis bersertifikat datang ke rumah Anda dengan peralatan lengkap.' },
   { title: 'Massage Hotel Bandung - Layanan Pijat ke Kamar Hotel', slug: 'massage-hotel-bandung', category: 'Service', tags: ['massage hotel', 'pijat hotel', 'bandung'], excerpt: 'Layanan massage langsung ke kamar hotel Anda di Bandung. Cocok untuk wisatawan dan business traveler.' },
   { title: 'Pijat untuk Pekerja Kantoran - Atasi Pegal dan Stress', slug: 'pijat-pekerja-kantoran', category: 'Health', tags: ['pijat kantor', 'office massage', 'stress relief'], excerpt: 'Tips mengatasi pegal dan stress untuk pekerja kantoran. Manfaat office massage untuk meningkatkan produktivitas.' },
@@ -59,11 +59,11 @@ function generateContent(template: BlogTemplate): string {
   const content = `
 <h2>Pengenalan</h2>
 <p>${template.excerpt}</p>
-<p>Di era modern ini, kesehatan dan wellness menjadi prioritas utama. Layanan pijat profesional seperti yang ditawarkan QueenMassage hadir sebagai solusi praktis untuk menjaga keseimbangan tubuh dan pikiran Anda.</p>
+<p>Di era modern ini, kesehatan dan wellness menjadi prioritas utama. Layanan pijat profesional seperti yang ditawarkan AurelMassage hadir sebagai solusi praktis untuk menjaga keseimbangan tubuh dan pikiran Anda.</p>
 
 <h2>Mengapa ${template.title.split(' - ')[0]}?</h2>
 <p>Dalam kehidupan yang semakin sibuk, meluangkan waktu untuk perawatan diri menjadi semakin penting. Massage therapy telah terbukti secara ilmiah memberikan berbagai manfaat kesehatan, mulai dari mengurangi stress hingga meningkatkan sirkulasi darah.</p>
-<p>QueenMassage memahami kebutuhan ini dan hadir dengan layanan pijat panggilan profesional yang bisa Anda nikmati di mana saja - rumah, hotel, atau kantor di area Bandung dan sekitarnya.</p>
+<p>AurelMassage memahami kebutuhan ini dan hadir dengan layanan pijat panggilan profesional yang bisa Anda nikmati di mana saja - rumah, hotel, atau kantor di area Bandung dan sekitarnya.</p>
 
 <h2>Manfaat Utama</h2>
 <ul>
@@ -74,8 +74,8 @@ function generateContent(template: BlogTemplate): string {
 <li><strong>Meningkatkan fleksibilitas</strong> - Membantu menjaga range of motion dan mencegah cedera.</li>
 </ul>
 
-<h2>Layanan QueenMassage</h2>
-<p>QueenMassage menyediakan berbagai jenis layanan massage profesional:</p>
+<h2>Layanan AurelMassage</h2>
+<p>AurelMassage menyediakan berbagai jenis layanan massage profesional:</p>
 <ol>
 <li><strong>Traditional Massage</strong> - Pijat tradisional Indonesia dengan teknik turun-temurun. Mulai Rp150.000.</li>
 <li><strong>Sport Massage</strong> - Khusus untuk atlet dan pecinta olahraga. Mulai Rp200.000.</li>
@@ -85,7 +85,7 @@ function generateContent(template: BlogTemplate): string {
 </ol>
 
 <h2>Cara Booking</h2>
-<p>Booking pijat panggilan di QueenMassage sangat mudah:</p>
+<p>Booking pijat panggilan di AurelMassage sangat mudah:</p>
 <ol>
 <li>Pilih layanan yang diinginkan</li>
 <li>Tentukan tanggal, waktu, dan lokasi</li>
@@ -94,7 +94,7 @@ function generateContent(template: BlogTemplate): string {
 </ol>
 
 <h2>Area Layanan</h2>
-<p>QueenMassage melayani seluruh area Bandung Raya termasuk:</p>
+<p>AurelMassage melayani seluruh area Bandung Raya termasuk:</p>
 <ul>
 <li>Bandung Kota (Dago, Setiabudi, Pasteur, Antapani)</li>
 <li>Bandung Selatan (Buah Batu, Kopo, Soreang)</li>
@@ -112,16 +112,16 @@ function generateContent(template: BlogTemplate): string {
 
 <h2>FAQ</h2>
 <h3>Berapa harga pijat panggilan di Bandung?</h3>
-<p>Harga pijat panggilan QueenMassage mulai dari Rp125.000 untuk Reflexology hingga Rp350.000 untuk Couple Massage. Harga sudah termasuk transport.</p>
+<p>Harga pijat panggilan AurelMassage mulai dari Rp125.000 untuk Reflexology hingga Rp350.000 untuk Couple Massage. Harga sudah termasuk transport.</p>
 
-<h3>Apakah terapis QueenMassage bersertifikat?</h3>
+<h3>Apakah terapis AurelMassage bersertifikat?</h3>
 <p>Ya, seluruh terapis kami telah melalui pelatihan profesional, sertifikasi resmi, dan background check untuk keamanan pelanggan.</p>
 
 <h3>Bagaimana cara booking?</h3>
-<p>Booking bisa dilakukan melalui website queenmassage.id, WhatsApp, atau telepon. Pilih layanan, tanggal, waktu, dan lokasi.</p>
+<p>Booking bisa dilakukan melalui website aurelmassage.id, WhatsApp, atau telepon. Pilih layanan, tanggal, waktu, dan lokasi.</p>
 
 <h2>Kesimpulan</h2>
-<p>${template.excerpt} Dengan QueenMassage, Anda bisa menikmati layanan pijat profesional tanpa perlu keluar rumah. Terapis bersertifikat, harga terjangkau, dan kepuasan terjamin. Booking sekarang dan rasakan perbedaannya!</p>
+<p>${template.excerpt} Dengan AurelMassage, Anda bisa menikmati layanan pijat profesional tanpa perlu keluar rumah. Terapis bersertifikat, harga terjangkau, dan kepuasan terjamin. Booking sekarang dan rasakan perbedaannya!</p>
 `
   return content.trim()
 }
@@ -153,11 +153,11 @@ async function main() {
           excerpt: template.excerpt,
           category: template.category,
           tags: template.tags,
-          author: 'QueenMassage',
+          author: 'AurelMassage',
           isPublished: true,
           publishedAt: new Date(Date.now() - i * 86400000),
           readTime: Math.floor(content.split(/\s+/).length / 200),
-          metaTitle: `${template.title} | QueenMassage`,
+          metaTitle: `${template.title} | AurelMassage`,
           metaDesc: template.excerpt.substring(0, 155),
         },
       })

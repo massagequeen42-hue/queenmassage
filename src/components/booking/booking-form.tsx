@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
@@ -61,7 +61,7 @@ export function BookingForm() {
 
         // Redirect to WhatsApp for confirmation
         const service = SERVICES.find((s) => s.slug === data.serviceId)
-        const message = `Halo QueenMassage, saya ingin booking:\n\nNama: ${data.customerName}\nLayanan: ${service?.name}\nTanggal: ${data.date}\nWaktu: ${data.time}\nDurasi: ${data.duration} menit\nAlamat: ${data.address}\nTotal: ${formatPrice(calculatedPrice)}`
+        const message = `Halo AurelMassage, saya ingin booking:\n\nNama: ${data.customerName}\nLayanan: ${service?.name}\nTanggal: ${data.date}\nWaktu: ${data.time}\nDurasi: ${data.duration} menit\nAlamat: ${data.address}\nTotal: ${formatPrice(calculatedPrice)}`
         window.open(getWhatsAppUrl(message), '_blank')
       } else {
         toast({

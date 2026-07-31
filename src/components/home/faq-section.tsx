@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -16,7 +16,7 @@ export function FAQSection() {
         <SectionHeading
           badge="FAQ"
           title="Pertanyaan yang Sering Diajukan"
-          subtitle="Temukan jawaban untuk pertanyaan umum tentang layanan pijat panggilan QueenMassage."
+          subtitle="Temukan jawaban untuk pertanyaan umum tentang layanan pijat panggilan AurelMassage."
         />
 
         <div className="max-w-3xl mx-auto space-y-3">

@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+﻿import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { prisma } from '@/lib/prisma'
 import { Calendar, Users, DollarSign, TrendingUp } from 'lucide-react'
 import { formatPrice } from '@/lib/utils'
@@ -60,7 +60,7 @@ export default async function AdminDashboard() {
     <div className="space-y-6">
       <div>
         <h1 className="text-3xl font-bold">Dashboard</h1>
-        <p className="text-muted-foreground">Overview bisnis QueenMassage</p>
+        <p className="text-muted-foreground">Overview bisnis AurelMassage</p>
       </div>
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">

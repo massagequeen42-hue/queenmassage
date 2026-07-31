@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
@@ -45,7 +45,7 @@ export function CTASection() {
               asChild
             >
               <a
-                href={getWhatsAppUrl('Halo QueenMassage, saya ingin booking pijat panggilan.')}
+                href={getWhatsAppUrl('Halo AurelMassage, saya ingin booking pijat panggilan.')}
                 target="_blank"
                 rel="noopener noreferrer"
               >

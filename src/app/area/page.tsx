@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+﻿import { Metadata } from 'next'
 import Link from 'next/link'
 import { MapPin } from 'lucide-react'
 import { SectionHeading } from '@/components/ui/section-heading'
@@ -7,9 +7,9 @@ import { COVERAGE_AREAS } from '@/lib/constants'
 
 export const metadata: Metadata = generateSEO({
   title: 'Area Layanan Pijat Panggilan',
-  description: 'Area coverage layanan pijat panggilan QueenMassage di Bandung, Cimahi, Lembang, Dago, Setiabudi, Pasteur, Antapani, Buah Batu, Kopo, dan Soreang.',
+  description: 'Area coverage layanan pijat panggilan AurelMassage di Bandung, Cimahi, Lembang, Dago, Setiabudi, Pasteur, Antapani, Buah Batu, Kopo, dan Soreang.',
   keywords: ['area pijat panggilan bandung', 'coverage massage bandung', 'jangkauan layanan pijat'],
-  url: 'https://queenmassage.id/area',
+  url: 'https://aurelmassage.id/area',
 })
 
 export default function AreaPage() {
@@ -19,7 +19,7 @@ export default function AreaPage() {
         <SectionHeading
           badge="Area Layanan"
           title="Jangkauan Layanan Kami"
-          subtitle="QueenMassage melayani seluruh area Bandung Raya. Pilih lokasi Anda untuk informasi lebih detail."
+          subtitle="AurelMassage melayani seluruh area Bandung Raya. Pilih lokasi Anda untuk informasi lebih detail."
         />
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

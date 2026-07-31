@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { motion } from 'framer-motion'
 import { Star, Quote } from 'lucide-react'
@@ -14,7 +14,7 @@ const testimonials = [
   {
     name: 'Budi Santoso',
     role: 'Atlet',
-    content: 'Sport massage di QueenMassage sangat membantu recovery setelah latihan berat. Terapisnya paham betul titik-titik otot yang tegang.',
+    content: 'Sport massage di AurelMassage sangat membantu recovery setelah latihan berat. Terapisnya paham betul titik-titik otot yang tegang.',
     rating: 5,
   },
   {
@@ -32,7 +32,7 @@ const testimonials = [
   {
     name: 'Ibu Siti',
     role: 'Pensiunan',
-    content: 'Sudah langganan QueenMassage lebih dari 6 bulan. Reflexology-nya sangat bagus untuk kesehatan kaki saya. Pelayanan selalu memuaskan.',
+    content: 'Sudah langganan AurelMassage lebih dari 6 bulan. Reflexology-nya sangat bagus untuk kesehatan kaki saya. Pelayanan selalu memuaskan.',
     rating: 5,
   },
   {
@@ -50,7 +50,7 @@ export function TestimonialsSection() {
         <SectionHeading
           badge="Testimoni"
           title="Pelanggan Kami Puas"
-          subtitle="Lihat apa kata mereka yang sudah merasakan layanan pijat profesional QueenMassage."
+          subtitle="Lihat apa kata mereka yang sudah merasakan layanan pijat profesional AurelMassage."
         />
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
