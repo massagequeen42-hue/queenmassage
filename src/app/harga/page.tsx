@@ -12,7 +12,7 @@ export const metadata: Metadata = generateSEO({
   title: 'Harga Pijat Panggilan Bandung',
   description: 'Daftar harga layanan pijat panggilan AurelMassage Bandung. Mulai dari Rp125.000. Harga transparan, tanpa biaya tersembunyi. Gratis transport.',
   keywords: ['harga pijat panggilan bandung', 'tarif massage bandung', 'biaya pijat rumah'],
-  url: 'https://aurelmassage.id/harga',
+  url: 'https://aurelmassage.my.id/harga',
 })
 
 export default function PricingPage() {

@@ -24,7 +24,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   ...generateSEO(),
-  metadataBase: new URL('https://aurelmassage.id'),
+  metadataBase: new URL('https://aurelmassage.my.id'),
   verification: {
     google: process.env.NEXT_PUBLIC_GSC_VERIFICATION,
   },

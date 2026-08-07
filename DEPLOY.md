@@ -38,7 +38,7 @@ git push -u origin main
 ### Domain Setup
 
 1. Go to Project Settings > Domains
-2. Add `aurelmassage.id`
+2. Add `aurelmassage.my.id`
 3. Configure DNS:
    - A Record: `76.76.21.21`
    - CNAME: `cname.vercel-dns.com`

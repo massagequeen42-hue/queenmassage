@@ -77,7 +77,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
     title: `${service.name} - Pijat Panggilan Bandung`,
     description: `Layanan ${service.name} profesional di Bandung. ${service.shortDesc} Mulai ${formatPrice(service.price)}. Booking sekarang!`,
     keywords: [`${service.name.toLowerCase()} bandung`, `pijat ${service.name.toLowerCase()}`, `${service.slug} panggilan`],
-    url: `https://aurelmassage.id/layanan/${slug}`,
+    url: `https://aurelmassage.my.id/layanan/${slug}`,
   })
 }
 
@@ -103,9 +103,9 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
   })
 
   const breadcrumb = generateBreadcrumbSchema([
-    { name: 'Home', url: 'https://aurelmassage.id' },
-    { name: 'Layanan', url: 'https://aurelmassage.id/layanan' },
-    { name: service.name, url: `https://aurelmassage.id/layanan/${slug}` },
+    { name: 'Home', url: 'https://aurelmassage.my.id' },
+    { name: 'Layanan', url: 'https://aurelmassage.my.id/layanan' },
+    { name: service.name, url: `https://aurelmassage.my.id/layanan/${slug}` },
   ])
 
   return (

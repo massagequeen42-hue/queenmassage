@@ -5,7 +5,7 @@ import { generateSEO } from '@/lib/seo'
 export const metadata: Metadata = generateSEO({
   title: 'Galeri',
   description: 'Galeri foto layanan pijat AurelMassage Bandung. Lihat suasana spa, terapis profesional, dan fasilitas kami.',
-  url: 'https://aurelmassage.id/galeri',
+  url: 'https://aurelmassage.my.id/galeri',
 })
 
 const galleryItems = [

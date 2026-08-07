@@ -118,7 +118,7 @@ function generateContent(template: BlogTemplate): string {
 <p>Ya, seluruh terapis kami telah melalui pelatihan profesional, sertifikasi resmi, dan background check untuk keamanan pelanggan.</p>
 
 <h3>Bagaimana cara booking?</h3>
-<p>Booking bisa dilakukan melalui website aurelmassage.id, WhatsApp, atau telepon. Pilih layanan, tanggal, waktu, dan lokasi.</p>
+<p>Booking bisa dilakukan melalui website aurelmassage.my.id, WhatsApp, atau telepon. Pilih layanan, tanggal, waktu, dan lokasi.</p>
 
 <h2>Kesimpulan</h2>
 <p>${template.excerpt} Dengan AurelMassage, Anda bisa menikmati layanan pijat profesional tanpa perlu keluar rumah. Terapis bersertifikat, harga terjangkau, dan kepuasan terjamin. Booking sekarang dan rasakan perbedaannya!</p>

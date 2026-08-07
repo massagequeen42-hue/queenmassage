@@ -17,7 +17,7 @@ export default function AdminLoginPage() {
           <form className="space-y-4">
             <div>
               <label className="text-sm font-medium mb-1.5 block">Email</label>
-              <Input type="email" placeholder="admin@aurelmassage.id" />
+              <Input type="email" placeholder="admin@aurelmassage.my.id" />
             </div>
             <div>
               <label className="text-sm font-medium mb-1.5 block">Password</label>

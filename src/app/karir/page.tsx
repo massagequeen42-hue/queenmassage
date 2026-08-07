@@ -9,7 +9,7 @@ export const metadata: Metadata = generateSEO({
   title: 'Karir - Lowongan Terapis Massage',
   description: 'Bergabung dengan AurelMassage sebagai terapis pijat profesional di Bandung. Gaji menarik, jadwal fleksibel, pelatihan gratis.',
   keywords: ['lowongan terapis bandung', 'karir massage', 'kerja pijat bandung'],
-  url: 'https://aurelmassage.id/karir',
+  url: 'https://aurelmassage.my.id/karir',
 })
 
 const benefits = [

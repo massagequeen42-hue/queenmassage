@@ -9,7 +9,7 @@ export const metadata: Metadata = generateSEO({
   title: 'Area Layanan Pijat Panggilan',
   description: 'Area coverage layanan pijat panggilan AurelMassage di Bandung, Cimahi, Lembang, Dago, Setiabudi, Pasteur, Antapani, Buah Batu, Kopo, dan Soreang.',
   keywords: ['area pijat panggilan bandung', 'coverage massage bandung', 'jangkauan layanan pijat'],
-  url: 'https://aurelmassage.id/area',
+  url: 'https://aurelmassage.my.id/area',
 })
 
 export default function AreaPage() {

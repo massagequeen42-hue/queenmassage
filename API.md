@@ -3,7 +3,7 @@
 ## Base URL
 
 ```
-https://aurelmassage.id/api
+https://aurelmassage.my.id/api
 ```
 
 ## Endpoints

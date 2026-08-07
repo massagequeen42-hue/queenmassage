@@ -11,7 +11,7 @@ export const metadata: Metadata = generateSEO({
   title: 'Blog - Tips Kesehatan & Massage',
   description: 'Baca artikel tentang tips kesehatan, manfaat pijat, panduan massage, dan informasi wellness dari AurelMassage Bandung.',
   keywords: ['blog massage bandung', 'tips pijat', 'artikel kesehatan', 'manfaat massage'],
-  url: 'https://aurelmassage.id/blog',
+  url: 'https://aurelmassage.my.id/blog',
 })
 
 export const revalidate = 3600 // revalidate every hour

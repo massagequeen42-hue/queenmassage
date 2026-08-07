@@ -7,7 +7,7 @@ export const metadata: Metadata = generateSEO({
   title: 'FAQ - Pertanyaan yang Sering Diajukan',
   description: 'Jawaban untuk pertanyaan umum tentang layanan pijat panggilan AurelMassage Bandung. Booking, harga, area layanan, terapis, dan informasi lainnya.',
   keywords: ['faq pijat panggilan', 'pertanyaan massage bandung', 'info pijat rumah'],
-  url: 'https://aurelmassage.id/faq',
+  url: 'https://aurelmassage.my.id/faq',
 })
 
 export default function FAQPage() {

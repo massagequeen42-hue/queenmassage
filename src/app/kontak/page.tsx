@@ -10,7 +10,7 @@ export const metadata: Metadata = generateSEO({
   title: 'Kontak Kami',
   description: 'Hubungi AurelMassage untuk booking pijat panggilan atau pertanyaan. WhatsApp, telepon, email, atau kunjungi kami. Respon cepat dalam 5 menit.',
   keywords: ['kontak queen massage', 'hubungi pijat bandung', 'whatsapp massage bandung'],
-  url: 'https://aurelmassage.id/kontak',
+  url: 'https://aurelmassage.my.id/kontak',
 })
 
 export default function ContactPage() {

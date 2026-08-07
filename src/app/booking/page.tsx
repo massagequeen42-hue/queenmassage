@@ -6,7 +6,7 @@ export const metadata: Metadata = generateSEO({
   title: 'Booking Pijat Panggilan',
   description: 'Booking pijat panggilan profesional di Bandung. Pilih layanan, tanggal, waktu, dan lokasi. Terapis datang ke rumah, hotel, atau kantor Anda.',
   keywords: ['booking pijat bandung', 'pesan pijat panggilan', 'reservasi massage bandung'],
-  url: 'https://aurelmassage.id/booking',
+  url: 'https://aurelmassage.my.id/booking',
 })
 
 export default function BookingPage() {

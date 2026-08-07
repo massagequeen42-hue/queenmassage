@@ -50,5 +50,5 @@ export function generateMetaTitle(title: string): string {
 }
 
 export function getBaseUrl(): string {
-  return process.env.NEXT_PUBLIC_APP_URL || 'https://aurelmassage.id'
+  return process.env.NEXT_PUBLIC_APP_URL || 'https://aurelmassage.my.id'
 }

@@ -11,13 +11,13 @@ export const metadata: Metadata = generateSEO({
   title: 'Layanan Pijat Panggilan Profesional',
   description: 'Daftar lengkap layanan pijat panggilan AurelMassage Bandung. Traditional Massage, Sport Massage, Reflexology, Aromatherapy, Prenatal Massage, dan lainnya.',
   keywords: ['layanan pijat bandung', 'jenis massage', 'pijat profesional'],
-  url: 'https://aurelmassage.id/layanan',
+  url: 'https://aurelmassage.my.id/layanan',
 })
 
 export default function ServicesPage() {
   const breadcrumb = generateBreadcrumbSchema([
-    { name: 'Home', url: 'https://aurelmassage.id' },
-    { name: 'Layanan', url: 'https://aurelmassage.id/layanan' },
+    { name: 'Home', url: 'https://aurelmassage.my.id' },
+    { name: 'Layanan', url: 'https://aurelmassage.my.id/layanan' },
   ])
 
   return (

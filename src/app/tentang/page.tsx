@@ -6,7 +6,7 @@ import { generateSEO } from '@/lib/seo'
 export const metadata: Metadata = generateSEO({
   title: 'Tentang AurelMassage',
   description: 'AurelMassage adalah layanan pijat panggilan profesional terbaik di Bandung sejak 2020. Terapis bersertifikat, pengalaman premium, kepuasan terjamin.',
-  url: 'https://aurelmassage.id/tentang',
+  url: 'https://aurelmassage.my.id/tentang',
 })
 
 const stats = [

@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: AreaPageProps): Promise<Metad
       `spa panggilan ${area.name.toLowerCase()}`,
       `pijat rumah ${area.name.toLowerCase()}`,
     ],
-    url: `https://aurelmassage.id/area/${slug}`,
+    url: `https://aurelmassage.my.id/area/${slug}`,
   })
 }
 
@@ -41,9 +41,9 @@ export default async function AreaDetailPage({ params }: AreaPageProps) {
   if (!area) notFound()
 
   const breadcrumb = generateBreadcrumbSchema([
-    { name: 'Home', url: 'https://aurelmassage.id' },
-    { name: 'Area Layanan', url: 'https://aurelmassage.id/area' },
-    { name: area.name, url: `https://aurelmassage.id/area/${slug}` },
+    { name: 'Home', url: 'https://aurelmassage.my.id' },
+    { name: 'Area Layanan', url: 'https://aurelmassage.my.id/area' },
+    { name: area.name, url: `https://aurelmassage.my.id/area/${slug}` },
   ])
 
   return (

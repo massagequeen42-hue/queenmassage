@@ -1,18 +1,18 @@
 export const SITE_CONFIG = {
   name: 'AurelMassage',
-  domain: 'aurelmassage.id',
-  url: 'https://aurelmassage.id',
+  domain: 'aurelmassage.my.id',
+  url: 'https://aurelmassage.my.id',
   title: 'AurelMassage - Pijat Panggilan Profesional Bandung #1',
   description: 'Layanan pijat panggilan profesional terbaik di Bandung. Tersedia Traditional Massage, Sport Massage, Reflexology, Aromatherapy, Prenatal Massage, dan lainnya. Terapis bersertifikat, harga terjangkau.',
   phone: '+628212988161',
   whatsapp: '628212988161',
-  email: 'info@aurelmassage.id',
+  email: 'info@aurelmassage.my.id',
   address: 'Bandung, Jawa Barat, Indonesia',
   openingHours: '24 Jam',
   socialMedia: {
-    instagram: 'https://instagram.com/aurelmassage.id',
-    facebook: 'https://facebook.com/aurelmassage.id',
-    tiktok: 'https://tiktok.com/@aurelmassage.id',
+    instagram: 'https://instagram.com/aurelmassage.my.id',
+    facebook: 'https://facebook.com/aurelmassage.my.id',
+    tiktok: 'https://tiktok.com/@aurelmassage.my.id',
   },
 }
 

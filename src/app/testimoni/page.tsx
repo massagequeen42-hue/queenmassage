@@ -6,7 +6,7 @@ export const metadata: Metadata = generateSEO({
   title: 'Testimoni Pelanggan',
   description: 'Baca testimoni pelanggan AurelMassage yang sudah merasakan layanan pijat panggilan profesional kami di Bandung. Rating 4.9/5 dari 500+ pelanggan.',
   keywords: ['testimoni pijat bandung', 'review massage bandung', 'ulasan queen massage'],
-  url: 'https://aurelmassage.id/testimoni',
+  url: 'https://aurelmassage.my.id/testimoni',
 })
 
 export default function TestimoniPage() {

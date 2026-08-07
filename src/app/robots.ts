@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/admin/', '/api/'],
       },
     ],
-    sitemap: 'https://aurelmassage.id/sitemap.xml',
+    sitemap: 'https://aurelmassage.my.id/sitemap.xml',
   }
 }

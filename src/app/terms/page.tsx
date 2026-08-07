@@ -4,7 +4,7 @@ import { generateSEO } from '@/lib/seo'
 export const metadata: Metadata = generateSEO({
   title: 'Terms of Service',
   description: 'Syarat dan ketentuan layanan AurelMassage. Baca sebelum menggunakan layanan pijat panggilan kami.',
-  url: 'https://aurelmassage.id/terms',
+  url: 'https://aurelmassage.my.id/terms',
   noIndex: true,
 })
 
